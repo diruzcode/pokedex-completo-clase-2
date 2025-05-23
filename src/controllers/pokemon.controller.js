@@ -7,6 +7,7 @@ export const PokemonController = {
   },
 
   async list(_req, res) {
+    console.log("_req.user", _req.user)
     res.json(await PokemonService.findAll());
   },
 
